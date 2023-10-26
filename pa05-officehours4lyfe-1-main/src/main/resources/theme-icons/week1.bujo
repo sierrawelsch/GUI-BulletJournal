@@ -1,0 +1,30 @@
+{"name-of-week":"sierra",
+"max-tasks":0,
+"max-events":0,
+"week":[
+{"day":"SUNDAY",
+"tasks":[],
+"events":[]
+},
+{"day":"MONDAY",
+"tasks":[],
+"events":[]
+},
+{"day":"TUESDAY",
+"tasks":[],
+"events":[
+    {"name-of-event":"ksw",
+    "description":"ks[pzdvbsk[",
+    "day-of-event":"TUESDAY",
+    "start-time":"daw[pefogkre",
+    "duration":50,
+    "location":{"row":1,"col":2}}
+    ]},
+    {"day":"WEDNESDAY","tasks":[],"events":[] },
+    {"day":"THURSDAY","tasks":[],"events":[]},
+    {"day":"FRIDAY","tasks":[],"events":[]},
+    {"day":"SATURDAY","tasks":[],"events":[]}],
+    "quotes-and-notes":"",
+    "task-queue":[],
+    "theme":"DEFAULT",
+    "theme-contents":[]}

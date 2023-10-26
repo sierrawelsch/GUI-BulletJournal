@@ -1,0 +1,1 @@
+{"name-of-week":"week4","max-tasks":10,"max-events":6,"week":[{"day":"MONDAY","tasks":[{"name-of-task":"HW","description":"need to do it","day-of-event":"MONDAY","complete":false}],"events":[{"name-of-event":"party","description":"need to go","day-of-event":"MONDAY","start-time":6.0,"duration":50}]}]}

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<Scene fx:id="javaJournalScene" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="anchorPane" prefHeight="800.0" prefWidth="1016.0">
+      <children>
+         <VBox prefHeight="215.0" prefWidth="113.0">
+            <children>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <Accordion fx:id="dropDownMenu">
+                       <panes>
+                         <TitledPane fx:id="openPane" animated="false" prefHeight="134.0" prefWidth="144.0" text="Open">
+                              <content>
+                                 <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                       <Button fx:id="openFileButton" mnemonicParsing="false" text="Open File" />
+                                    </children>
+                                 </HBox>
+                              </content>
+                           </TitledPane>
+                         <TitledPane fx:id="savePane" animated="false" prefHeight="70.0" prefWidth="133.0" text="Save">
+                              <content>
+                                 <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                       <Button fx:id="saveToButton" mnemonicParsing="false" text="Save File" />
+                                    </children>
+                                 </VBox>
+                              </content>
+                           </TitledPane>
+                         <TitledPane fx:id="addPane" animated="false" prefHeight="25.0" prefWidth="133.0" text="Add">
+                              <content>
+                                 <HBox prefHeight="100.0" prefWidth="200.0">
+                                    <children>
+                                       <VBox prefHeight="200.0" prefWidth="100.0">
+                                          <children>
+                                             <Button fx:id="addTaskButton" mnemonicParsing="false" text="Add Task" />
+                                             <Button fx:id="addEventButton" mnemonicParsing="false" text="Add Event" translateY="3.0" />
+                                          </children>
+                                       </VBox>
+                                    </children>
+                                 </HBox>
+                              </content>
+                         </TitledPane>
+                           <TitledPane fx:id="editPane" animated="false" text="Edit">
+                              <content>
+                                 <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                       <Button fx:id="editTaskButton" mnemonicParsing="false" text="Edit Task" />
+                                       <Button fx:id="editEventButton" mnemonicParsing="false" text="Edit Event" translateY="3.0" />
+                                    </children>
+                                 </VBox>
+                              </content>
+                           </TitledPane>
+                           <TitledPane fx:id="removePane" animated="false" text="Remove">
+                              <content>
+                                 <VBox prefHeight="200.0" prefWidth="100.0">
+                                    <children>
+                                       <Button fx:id="removeTaskButton" mnemonicParsing="false" text="Remove Task">
+                                          <font>
+                                             <Font size="10.0" />
+                                          </font>
+                                       </Button>
+                                       <Button fx:id="removeEventButton" mnemonicParsing="false" text="Remove Event" translateY="3.0">
+                                          <font>
+                                             <Font size="10.0" />
+                                          </font>
+                                       </Button>
+                                    </children>
+                                 </VBox>
+                              </content>
+                           </TitledPane>
+                         <TitledPane fx:id="themesPane" animated="false" text="Themes">
+                              <content>
+                                 <VBox prefHeight="79.0" prefWidth="100.0">
+                                    <children>
+                                       <Button fx:id="modernThemeButton" mnemonicParsing="false" text="Modern" />
+                                       <Button fx:id="retroThemeButton" mnemonicParsing="false" text="Retro" translateY="3.0" />
+                                       <Button fx:id="pastelThemeButton" mnemonicParsing="false" text="Pastel" translateY="6.0" />
+                                       <Button fx:id="customThemeButton" mnemonicParsing="false" text="Custom" translateY="9.0" />
+                                    </children>
+                                 </VBox>
+                              </content>
+                         </TitledPane>
+                       </panes>
+                     </Accordion>
+                  </children>
+               </HBox>
+            </children>
+         </VBox>
+         <HBox alignment="CENTER" layoutX="322.0" layoutY="-12.0" prefHeight="81.0" prefWidth="476.0">
+            <children>
+               <Label fx:id="javaJournalLabel" contentDisplay="CENTER" prefHeight="45.0" prefWidth="411.0" text="      Java Journal" textAlignment="CENTER">
+                  <font>
+                     <Font name="Bradley Hand ITC" size="57.0" />
+                  </font>
+                  <textFill>
+                     <LinearGradient endX="1.0" endY="1.0" startX="0.6217494089834515">
+                        <stops>
+                           <Stop>
+                              <color>
+                                 <Color red="0.5197368264198303" green="0.21174463629722595" blue="0.21174463629722595" />
+                              </color>
+                           </Stop>
+                           <Stop offset="0.7559236372565067">
+                              <color>
+                                 <Color red="0.1462000012397766" green="0.32880347967147827" blue="0.4300000071525574" />
+                              </color>
+                           </Stop>
+                           <Stop offset="1.0">
+                              <color>
+                                 <Color red="1.0" green="1.0" blue="1.0" />
+                              </color>
+                           </Stop>
+                        </stops>
+                     </LinearGradient>
+                  </textFill>
+               </Label>
+            </children>
+         </HBox>
+         <Accordion fx:id="menuAccordion" layoutX="537.0" layoutY="170.0" />
+         <GridPane fx:id="weekView" gridLinesVisible="true" layoutX="143.0" layoutY="69.0" prefHeight="630.0" prefWidth="850.0">
+           <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.5" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.5" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+           </columnConstraints>
+           <rowConstraints>
+             <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="20.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="248.0" minHeight="0.0" prefHeight="47.0" vgrow="SOMETIMES" />
+             <RowConstraints maxHeight="309.0" minHeight="9.0" prefHeight="47.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="273.5" minHeight="0.0" prefHeight="47.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="343.5" minHeight="0.0" prefHeight="47.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="9.0" prefHeight="48.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+            <children>
+               <HBox fx:id="sunday" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <Label contentDisplay="CENTER" mouseTransparent="true" text="SUNDAY" textAlignment="CENTER" HBox.hgrow="SOMETIMES">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox fx:id="monday" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                  <children>
+                     <Label text="MONDAY">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox fx:id="tuesday" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                  <children>
+                     <Label text="TUESDAY">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox fx:id="wednesday" alignment="CENTER" prefHeight="42.0" prefWidth="96.0" GridPane.columnIndex="3">
+                  <children>
+                     <Label text="WEDNESDAY">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox fx:id="thursday" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
+                  <children>
+                     <Label text="THURSDAY">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox fx:id="friday" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
+                  <children>
+                     <Label text="FRIDAY">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <HBox fx:id="saturday" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6">
+                  <children>
+                     <Label text="SATURDAY">
+                        <font>
+                           <Font name="Book Antiqua" size="12.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+            </children>
+         </GridPane>
+         <Label fx:id="quotesNotesLabel" layoutX="135.0" layoutY="701.0" text="Quotes &amp; Notes" textAlignment="CENTER">
+            <font>
+               <Font name="Bell MT Bold" size="16.0" />
+            </font>
+            <textFill>
+               <LinearGradient endX="1.0" endY="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.5197368264198303" green="0.21174463629722595" blue="0.21174463629722595" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="0.22768868505954742" green="0.09141995757818222" blue="0.5723684430122375" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </LinearGradient>
+            </textFill>
+         </Label>
+         <TextArea fx:id="quotesNotesTextArea" layoutX="251.0" layoutY="701.0" prefHeight="89.0" prefWidth="247.0" />
+         <HBox alignment="CENTER" layoutX="124.0" layoutY="10.0" prefHeight="64.0" prefWidth="127.0">
+            <children>
+               <Label fx:id="weekLabel" text="This Week: ">
+                  <font>
+                     <Font name="Bell MT" size="20.0" />
+                  </font>
+               </Label>
+            </children>
+         </HBox>
+         <TextField fx:id="weekNameTextField" layoutX="236.0" layoutY="30.0" />
+         <Label fx:id="maxEventsLabel" layoutX="868.0" layoutY="6.0" text="Max Events: " />
+         <Label fx:id="maxTasksLabel" layoutX="873.0" layoutY="32.0" text="Max Tasks:" />
+         <TextField fx:id="maxEventsTextField" layoutX="949.0" layoutY="2.0" prefHeight="25.0" prefWidth="44.0" />
+         <TextField fx:id="maxTasksTextField" layoutX="949.0" layoutY="30.0" prefHeight="25.0" prefWidth="44.0" />
+         <VBox fx:id="taskQueueContainer" layoutY="306.0" prefHeight="494.0" prefWidth="113.0">
+            <children>
+               <Label fx:id="taskQueueLabel" alignment="CENTER" prefHeight="0.0" prefWidth="113.0" text="Task Queue" textAlignment="CENTER">
+                  <font>
+                     <Font name="System Bold" size="12.0" />
+                  </font>
+               </Label>
+               <VBox fx:id="taskQueueVbox" prefHeight="461.0" prefWidth="113.0" />
+            </children>
+         </VBox>
+         <HBox fx:id="weeklyOverviewContainer" layoutX="666.0" layoutY="696.0" prefHeight="100.0" prefWidth="327.0">
+            <children>
+               <VBox prefHeight="100.0" prefWidth="211.0">
+                  <children>
+                     <Label fx:id="weeklyOverviewLabel" alignment="CENTER" contentDisplay="CENTER" text="Weekly Overview" textAlignment="CENTER" translateX="20.0" translateY="11.0">
+                        <font>
+                           <Font name="Bell MT Bold" size="16.0" />
+                        </font>
+                        <textFill>
+                           <LinearGradient endX="1.0" endY="1.0">
+                              <stops>
+                                 <Stop>
+                                    <color>
+                                       <Color red="0.5197368264198303" green="0.21174463629722595" blue="0.21174463629722595" />
+                                    </color>
+                                 </Stop>
+                                 <Stop offset="1.0">
+                                    <color>
+                                       <Color red="0.22768868505954742" green="0.09141995757818222" blue="0.5723684430122375" />
+                                    </color>
+                                 </Stop>
+                              </stops>
+                           </LinearGradient>
+                        </textFill>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox prefHeight="100.0" prefWidth="192.0">
+                  <children>
+                     <HBox prefHeight="33.0" prefWidth="127.0">
+                        <children>
+                           <Label fx:id="totalTasksLabel" text="Total Tasks: " translateY="13.0" />
+                           <TextField fx:id="totalTasksTextField" editable="false" prefHeight="25.0" prefWidth="61.0" translateX="29.0" translateY="8.0" />
+                        </children>
+                     </HBox>
+                     <HBox prefHeight="33.0" prefWidth="127.0">
+                        <children>
+                           <Label fx:id="totalEventsLabel" text="Total Events: " translateY="11.0" />
+                           <TextField fx:id="totalEventsTextField" editable="false" prefHeight="25.0" prefWidth="61.0" translateX="24.0" translateY="8.0" />
+                        </children>
+                     </HBox>
+                     <HBox prefHeight="33.0" prefWidth="127.0">
+                        <children>
+                           <Label fx:id="totalTasksCompleteLabel" text="Tasks Complete:" translateX="-3.0" translateY="11.0" />
+                           <TextField fx:id="totalTasksCompleteTextField" editable="false" prefHeight="25.0" prefWidth="61.0" translateX="8.0" translateY="7.0" />
+                        </children>
+                     </HBox>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <Button fx:id="updateMaxButton" layoutX="812.0" layoutY="18.0" mnemonicParsing="false" text="Update">
+            <font>
+               <Font size="9.0" />
+            </font>
+         </Button>
+         <Label fx:id="splashLabel" prefHeight="810.0" prefWidth="1018.0" text="Label" />
+      </children></AnchorPane>
+</Scene>
